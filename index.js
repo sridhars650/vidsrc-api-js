@@ -35,6 +35,6 @@ app.get('/embedsu/:tmdbId', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server is running on port ${port}`);
 });
